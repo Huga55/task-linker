@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jira Comment Adder</title>
+  <link href="styles/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <h3 class="title">
+            Please provide a link to your repository with a placeholder for inserting the task ID (e.g., "{taskId}").
+        </h3>
+        <textarea class="link" id="jira-comment" placeholder="https://domain.com/module/merge_requests?scope=all&state=opened&search={taskId}"></textarea>
+        <button class="btn" id="jira-addComment">Add link to MR</button>
+    </div>
+
+    <script src="scripts/const.js"></script>
+    <script src="scripts/popup.js"></script>
+</body>
+</html>
