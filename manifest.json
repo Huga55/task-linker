@@ -1,10 +1,9 @@
 {
     "manifest_version": 2,
-    "name": "Jira Comment Adder",
+    "name": "Task linker",
     "version": "1.0",
     "permissions": [
-      "activeTab",
-      "https://*.atlassian.net/*"
+      "activeTab"
     ],
     "background": {
       "scripts": ["scripts/background.js"]

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <title>Jira Comment Adder</title>
-  <link href="styles/styles.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <link href="styles/styles.css" rel="stylesheet" />
+    <title>Task linker</title>
 </head>
 <body>
     <div class="wrapper">
         <h3 class="title">
-            Please provide a link to your repository with a placeholder for inserting the task ID (e.g., "{taskId}").
+            Введите полную ссылку на репозиторий и укажите место для вставки шаблона с номером задачи: "{taskId}"
+            <!--Please provide a link to your repository with a placeholder for inserting the task ID (e.g., "{taskId}").!-->
         </h3>
-        <textarea class="link" id="jira-comment" placeholder="https://domain.com/module/merge_requests?scope=all&state=opened&search={taskId}"></textarea>
-        <button class="btn" id="jira-addComment">Add link to MR</button>
+        <textarea class="link" id="jira-comment" placeholder="Ex. https://domain.com/module/merge_requests?scope=all&state=opened&search={taskId}"></textarea>
+        <button class="btn" id="jira-addComment">Добавить ссылку</button>
     </div>
 
     <script src="scripts/const.js"></script>
