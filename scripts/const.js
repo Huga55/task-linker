@@ -1,14 +1,15 @@
 const jiraAddCommentConst = {
   inputId: "jira-comment",
-  buttonId: "jira-addComment",
+  addCommentButtonId: "jira-addComment",
+  copyLinkButtonId: "jira-copyLink",
 
   addCommentAction: "addComment",
+  copyLinkAction: "copyLink",
 
   storageComment: "savedComment",
 
   jiraInputSelector: "#comment",
   jiraSubmitSelector: "#issue-comment-add-submit",
-  jiraTaskIdSelector: ".issue-link",
 
   replaceMaskRegExp: new RegExp(/\{taskId\}/),
 };
