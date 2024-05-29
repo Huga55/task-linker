@@ -8,7 +8,7 @@
 
 1. Склонируйте репозиторий:
    ```bash
-   git clone <URL вашего репозитория>
+   git clone https://github.com/Huga55/task-linker.git
    ```
 2. Откройте Chrome и перейдите в менеджер расширений:
    ```
