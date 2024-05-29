@@ -1,5 +1,6 @@
 const jiraAddCommentConst = {
-  inputId: "jira-comment",
+  inputCommentId: "jira-comment",
+  inputTemplateId: "jira-template",
   addCommentButtonId: "jira-addComment",
   copyLinkButtonId: "jira-copyLink",
 
@@ -7,6 +8,7 @@ const jiraAddCommentConst = {
   copyLinkAction: "copyLink",
 
   storageComment: "savedComment",
+  storageTemplate: "savedTemplate",
 
   jiraInputSelector: "#comment",
   jiraSubmitSelector: "#issue-comment-add-submit",

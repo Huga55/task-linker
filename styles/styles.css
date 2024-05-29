@@ -23,7 +23,19 @@ body {
 }
 
 .link {
-    height: 150px;
+    height: 120px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.template {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;

@@ -23,7 +23,7 @@ const getJiraTaskIdFromURL = () => {
   return parts.at(-1);
 };
 
-const getTaskLink = (comment) => {
+const getTaskLink = (comment, template) => {
   if (!comment || !comment.match(replaceMaskRegExp)) {
     console.error("Comment is empty or it doesn't match replace mask");
     return null;
@@ -35,12 +35,15 @@ const getTaskLink = (comment) => {
     return null;
   }
 
-  const searchValue = getSearchValue(jiraTaskId);
+  const searchValue = template
+    ? template.replace(replaceMaskRegExp, jiraTaskId)
+    : getSearchValue(jiraTaskId);
+
   return comment.replace(replaceMaskRegExp, searchValue);
 };
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  const taskLink = getTaskLink(request.comment);
+  const taskLink = getTaskLink(request.comment, request.template);
   console.log(request.action, taskLink);
   if (!taskLink) {
     return;

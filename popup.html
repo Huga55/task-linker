@@ -12,6 +12,10 @@
             <!--Please provide a link to your repository with a placeholder for inserting the task ID (e.g., "{taskId}").!-->
         </h3>
         <textarea class="link" id="jira-comment" placeholder="Ex. https://domain.com/module/merge_requests?scope=all&state=opened&search={taskId}"></textarea>
+        <div class="description">
+            Введите шаблон для вставки, id задачи добавится на место "{taskId}" <br /> (необязательно)
+        </div>
+        <input class="template" id="jira-template" placeholder="from+{taskId}+into" />
         <button class="btn" id="jira-copyLink">Копировать ссылку</button>
         <button class="btn" id="jira-addComment">Добавить ссылку</button>
     </div>
